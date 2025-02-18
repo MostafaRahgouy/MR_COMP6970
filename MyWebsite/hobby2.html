@@ -1,33 +1,152 @@
-<!doctype HTML>
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Like Solving Puzzles</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #dfe6e9, #34495e);
+            color: #fff;
+            line-height: 1.8;
+        }
 
-    <HEAD>
-        <meta charset=”UTF-8”>
-        <TITLE>My Hobbies Website</TITLE>
-    </HEAD>
-<BODY>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #34495e;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
 
-    <form style="display: inline" action="index.html" method="get">
-        <button>Home</button>
-    </form>
-    <HR>
-<H1>Why I Like Solving Puzzles</H1>
+        h1 {
+            font-size: 3.5rem;
+            color: #ff7f50;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
 
-<H5>Mental Challenge</H5>
-Solving puzzles keeps my mind sharp and improves my problem-solving skills. I enjoy the challenge of finding solutions to complex problems.  
+        h5 {
+            font-size: 1.6rem;
+            color: #fffbfb;
+            margin: 15px 0;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
 
-<H5>Improves Focus and Patience</H5>
-Puzzles require concentration and patience, which help me stay focused for long periods without getting distracted.  
+        h5:hover {
+            color: #ffec40;
+            opacity: 1;
+        }
 
-<H5>Different Types to Explore</H5>
-From crosswords and Sudoku to logic puzzles and riddles, there are so many types of puzzles to enjoy. Each one offers a unique way to test my thinking.  
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin: 10px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-<H5>A Great Way to Relax</H5>
-Even though puzzles challenge my brain, they also help me relax and unwind. It’s a fun way to take a break from daily tasks.  
+        .button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 20px;
+        }
 
-<H5>Sense of Achievement</H5>
-The moment I solve a difficult puzzle gives me a great sense of satisfaction and accomplishment. It keeps me motivated to tackle even harder challenges.  
+        .button:hover {
+            background-color: #0984e3;
+            transform: translateY(-5px);
+        }
 
+        hr {
+            border: 0;
+            border-top: 2px solid #ff7f50;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 80%;
+            margin-left: 10%;
+        }
 
-</BODY>
-</HTML>
+        .nav-btn {
+            /* background-color: #2d3436; */
+            background-color: #ff7f50;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: darkcyan;
+        }
+
+        a {
+            color: #ff7f50;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0984e3;
+        }
+
+        .puzzle-img {
+            max-width: 80%;
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 5px solid #ff7f50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="index.html" method="get" style="display: inline-block;">
+            <button type="submit" class="nav-btn">Home</button>
+        </form>
+        <hr>
+
+        <h1>Why I Like Solving Puzzles</h1>
+
+        <h5>Mental Challenge</h5>
+        <p>Solving puzzles keeps my mind sharp and improves my problem-solving skills. I enjoy the challenge of finding solutions to complex problems.</p>
+
+        <h5>Improves Focus and Patience</h5>
+        <p>Puzzles require concentration and patience, which help me stay focused for long periods without getting distracted.</p>
+
+        <h5>Different Types to Explore</h5>
+        <p>From crosswords and Sudoku to logic puzzles and riddles, there are so many types of puzzles to enjoy. Each one offers a unique way to test my thinking.</p>
+
+        <h5>Chess as a Puzzle</h5>
+        <p>Chess is one of my favorite puzzles to solve. It challenges me to think ahead, plan strategies, and anticipate my opponent’s moves. I enjoy playing and improving my skills by solving chess puzzles. I get new chess puzzles from <a href="https://www.chess.com/puzzles" target="_blank">Chess.com</a>.</p>
+
+        <h5>A Great Way to Relax</h5>
+        <p>Even though puzzles challenge my brain, they also help me relax and unwind. It’s a fun way to take a break from daily tasks.</p>
+
+        <h5>Sense of Achievement</h5>
+        <p>The moment I solve a difficult puzzle gives me a great sense of satisfaction and accomplishment. It keeps me motivated to tackle even harder challenges.</p>
+
+        <img src="puzzle.jpg" alt="Puzzle" class="puzzle-img">
+    </div>
+
+</body>
+</html>

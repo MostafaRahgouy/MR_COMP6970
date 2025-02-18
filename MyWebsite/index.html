@@ -1,26 +1,242 @@
-<!doctype HTML>
-<HTML>
-<HEAD>
-    <meta charset=”UTF-8”>
-    <TITLE>My Hobbies Website</TITLE>
-</HEAD>
-<BODY>
-<H1>Hobbies</H1>
-<H4><a href="hobby1.html">Soccer</a></H4>
-I love playing soccer and enjoy both casual games and competitive matches.  
-<H5>Volleyball</H5>
-I have fun playing volleyball at the beach and in local leagues.  
-<H4>Eating</H4>
-I enjoy trying new foods and exploring different cuisines from around the world.  
-<H4><a href="hobby2.html">Solving Puzzles</a></H4>
-I love solving logic puzzles, crosswords, and brain teasers in my free time.  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies & Fun Facts</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #dfe6e9, #34495e);
+            color: #fff;
+            line-height: 1.8;
+        }
 
-<H1>Fun Facts</H1>
-<h4>Favorite Dessert</H4>
-I have a huge sweet tooth, and cheesecake is my all-time favorite dessert.  
-<H4>Strange Talent</H4>
-I can do coding for one full day without taking rest.  
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #34495e;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
 
-This is my website!  
-</BODY>
-</HTML>
+        h1, h2, h3, h4, h5 {
+            margin: 0;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ff9f43;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #fdcb6e;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #00cec9;
+        }
+
+        a {
+            color: #fdcb6e;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff7675;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #dfe6e9;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 12px;
+            margin: 8px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .like {
+            color: #55efc4;
+        }
+
+        .dislike {
+            color: #ff7675;
+        }
+
+        .hobby-section, .fun-facts-section {
+            margin-bottom: 40px;
+        }
+
+        .hobby, .fun-fact {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            border: 2px solid #fff;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .hobby:hover, .fun-fact:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .like-dislike-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .like-dislike-container h2 {
+            width: 48%;
+        }
+
+        .like-dislike-container ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .like-dislike-container .likes {
+            width: 48%;
+            text-align: left;
+        }
+
+        .like-dislike-container .dislikes {
+            width: 48%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #00cec9;
+            color: #fff;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ff7675;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">My Hobbies & Fun Facts</h1>
+
+        <div class="hobby-section fade-in">
+            <h2>Hobbies</h2>
+
+            <div class="hobby fade-in">
+                <h4><a href="hobby1.html">Soccer</a></h4>
+                <p>I love playing soccer and enjoy both casual games and competitive matches.</p>
+            </div>
+
+            <div class="hobby fade-in">
+                <h5>Eating</h5>
+                <p>I have fun playing volleyball at the beach and in local leagues.</p>
+            </div>
+
+            <div class="hobby fade-in">
+                <h5>Volleyball</h5>
+                <p>I enjoy trying new foods and exploring different cuisines from around the world.</p>
+            </div>
+
+            <div class="hobby fade-in">
+                <h4><a href="hobby2.html">Solving Puzzles</a></h4>
+                <p>I love solving logic puzzles, crosswords, and brain teasers in my free time.</p>
+            </div>
+        </div>
+
+        <div class="fun-facts-section fade-in">
+            <h2>Fun Facts</h2>
+            <div class="fun-fact fade-in">
+                <h4>Favorite Dessert</h4>
+                <p>I have a huge sweet tooth, and cheesecake is my all-time favorite dessert.</p>
+            </div>
+            <div class="fun-fact fade-in">
+                <h4>Strange Talent</h4>
+                <p>I can do coding for one full day without taking rest.</p>
+            </div>
+        </div>
+
+        <div class="like-dislike-container fade-in">
+            <div class="likes">
+                <h2 class="like">Things I Like:</h2>
+                <ul class="fade-in">
+                    <li class="like">Playing soccer</li>
+                    <li class="like">Solving puzzles</li>
+                    <li class="like">Trying new foods</li>
+                    <li class="like">Listening to music</li>
+                    <li class="like">Coding for hours</li>
+                </ul>
+            </div>
+
+            <div class="dislikes">
+                <h2 class="dislike">Things I Dislike:</h2>
+                <ul class="fade-in">
+                    <li class="dislike">Waking up early</li>
+                    <li class="dislike">Slow internet</li>
+                    <li class="dislike">Loud noises when I'm concentrating</li>
+                    <li class="dislike">Waiting in long lines</li>
+                    <li class="dislike">Forgetting an idea before writing it down</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

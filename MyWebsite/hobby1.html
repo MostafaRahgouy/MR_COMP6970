@@ -1,34 +1,154 @@
-<!doctype HTML>
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Like Soccer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #dfe6e9, #34495e);
+            color: #fff;
+            line-height: 1.8;
+        }
 
-    <HEAD>
-        <meta charset=”UTF-8”>
-        <TITLE>My Hobbies Website</TITLE>
-    </HEAD>
-    
-<BODY>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #34495e;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
 
-    <form style="display: inline" action="index.html" method="get">
-        <button>Home</button>
-    </form>
-    <HR>
-<H1>Why I Like Soccer</H1>
+        h1 {
+            font-size: 3.5rem;
+            color: #ff7f50;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
 
-<H5>Exciting and Fast-Paced</H5>
-Soccer is a dynamic sport that keeps me engaged from start to finish. The fast movements and quick decision-making make every game thrilling.  
+        h5 {
+            font-size: 1.6rem;
+            color: #fffbfb;
+            margin: 15px 0;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
 
-<H5>Great for Fitness</H5>
-Playing soccer helps me stay active and healthy. It improves my endurance, agility, and overall fitness while having fun.  
+        h5:hover {
+            color: #ffec40;
+            opacity: 1;
+        }
 
-<H5>Teamwork and Strategy</H5>
-I enjoy working with teammates to plan strategies and execute plays. Soccer teaches cooperation, communication, and how to think quickly under pressure.  
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin: 10px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-<H5>Worldwide Passion</H5>
-Soccer is loved all over the world, and I enjoy connecting with people who share the same passion. Watching international matches and supporting my favorite teams adds to the excitement.  
+        .button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 20px;
+        }
 
-<H5>Endless Learning</H5>
-No matter how much I play, there’s always something new to learn—better footwork, smarter positioning, and advanced techniques. That challenge keeps me motivated.  
+        .button:hover {
+            background-color: #0984e3;
+            transform: translateY(-5px);
+        }
 
+        hr {
+            border: 0;
+            border-top: 2px solid #ff7f50;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 80%;
+            margin-left: 10%;
+        }
 
-</BODY>
-</HTML>
+        .nav-btn {
+            /* background-color: #2d3436; */
+            background-color: #ff7f50;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: darkcyan;
+        }
+
+        a {
+            color: #ff7f50;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0984e3;
+        }
+
+        .soccer-img {
+            max-width: 80%;
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 5px solid #ff7f50;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="index.html" method="get" style="display: inline-block;">
+            <button type="submit" class="nav-btn">Home</button>
+        </form>
+        <hr>
+
+        <h1>Why I Like Soccer</h1>
+
+        <h5>Exciting and Fast-Paced</h5>
+        <p>Soccer is a dynamic sport that keeps me engaged from start to finish. The fast movements and quick decision-making make every game thrilling.</p>
+
+        <h5>Great for Fitness</h5>
+        <p>Playing soccer helps me stay active and healthy. It improves my endurance, agility, and overall fitness while having fun.</p>
+
+        <h5>Teamwork and Strategy</h5>
+        <p>I enjoy working with teammates to plan strategies and execute plays. Soccer teaches cooperation, communication, and how to think quickly under pressure.</p>
+
+        <h5>Worldwide Passion</h5>
+        <p>Soccer is loved all over the world, and I enjoy connecting with people who share the same passion. Watching international matches and supporting my favorite teams adds to the excitement.</p>
+
+        <h5>Endless Learning</h5>
+        <p>No matter how much I play, there’s always something new to learn—better footwork, smarter positioning, and advanced techniques. That challenge keeps me motivated.</p>
+
+        <h5>Watching Soccer</h5>
+        <p>I love watching soccer matches whenever I have time. I keep up with the latest games and highlights on <a href="https://www.espn.com/soccer/" target="_blank">ESPN Soccer</a>.</p>
+
+        <img src="soccer.jpg" alt="Soccer ball" class="soccer-img">
+
+    </div>
+
+</body>
+</html>
